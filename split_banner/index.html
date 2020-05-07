@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Split Banner</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section>
+		<div class="side" id="side1"></div>
+		<div class="side" id="side2"></div>
+	</section>
+	<div class="contentBx">
+		<h2>Split Banner On Page Roll</h2>
+		<p>Topic sentences are similar to mini thesis statements. Like a thesis statement, a topic sentence has a specific main point. Whereas the thesis is the main point of the essay, the topic sentence is the main point of the paragraph. Like the thesis statement, a topic sentence has a unifying function. But a thesis statement or topic sentence alone doesn’t guarantee unity. An essay is unified if all the paragraphs relate to the thesis, whereas a paragraph is unified if all the sentences relate to the topic sentence. Note: Not all paragraphs need topic sentences. In particular, opening and closing paragraphs, which serve different functions from body paragraphs, generally don’t have topic sentences.
+		Topic sentences are similar to mini thesis statements. Like a thesis statement, a topic sentence has a specific main point. Whereas the thesis is the main point of the essay, the topic sentence is the main point of the paragraph. Like the thesis statement, a topic sentence has a unifying function. But a thesis statement or topic sentence alone doesn’t guarantee unity. An essay is unified if all the paragraphs relate to the thesis, whereas a paragraph is unified if all the sentences relate to the topic sentence. Note: Not all paragraphs need topic sentences. In particular, opening and closing paragraphs, which serve different functions from body paragraphs, generally don’t have topic sentences.
+		</p>
+	</div>
+	<script type="text/javascript">
+		var side1 = document.getElementById("side1")
+		window.addEventListener("scroll" , function(){
+			side1.style.left = -window.pageYOffset + "px";
+		})
+
+		var side2 = document.getElementById("side2")
+		window.addEventListener("scroll" , function(){
+			side2.style.left = window.pageYOffset + "px";
+		})
+	</script>
+</body>
+</html>
